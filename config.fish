@@ -1,16 +1,28 @@
 
+
 if status is-interactive
 
+#assaign your package manager here
+alias packager="apt"
+#update aliases
+
+alias upd="sudo packager update"
+
+alias upg="sudo packager upgrade"
+
+alias rup="sudo packager update && sudo packager upgrade && sudo reboot"
+
+alias sup="sudo package update && sudo packager upgrade && sudo poweroff"
 
 # (lol linus) package managers alias
-alias emerge="doas apt install"
+alias emerge="sudo apt install"
 # winget aliases
 
-alias windate="pacman -Sy"
+alias windate="sudo packager -Sy"
 
-alias wingrade="pacman -Syu"
+alias wingrade="sudo packager -Syu"
 
-alias winget=pacapt
+alias winget="sudo packager"
 
 #yay aliases
 
@@ -28,7 +40,7 @@ alias pwsh=fish
 
 alias notepad=gedit
 
-alias rootpad="doas gedit"
+alias rootpad="sudo kate"
 
 
 # neofetch aliases
@@ -43,16 +55,20 @@ alias winver="lsb_release -a"
 
 alias superdo=sudo
 
-#alias sudo=doas
+##alias sudo=doas
 
 alias cl=clear
 
+alias cll="clear && neofetch -l"
+
 alias cn="clear && neofetch"
+
+alias ct="clear && uptime -p"
 
 alias l=ls
 
 alias logo="neofetch -l"
 
-# Commands to run in interactive sessions can go here
-
+#only use this if you have startship installed 
+##starship init fish | source
 end
