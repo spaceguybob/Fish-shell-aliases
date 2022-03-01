@@ -6,21 +6,21 @@ if status is-interactive
 alias packager="apt"
 #update aliases
 
-alias upd="sudo packager update"
+alias upd="sudo pmm update"
 
-alias upg="sudo packager upgrade"
+alias upg="sudo pmm upgrade"
 
-alias rup="sudo packager update && sudo packager upgrade && sudo reboot"
+alias rup="sudo pmm update && sudo pmm upgrade && sudo reboot"
 
-alias sup="sudo package update && sudo packager upgrade && sudo poweroff"
+alias sup="sudo pmm update && sudo pmm upgrade && sudo poweroff"
 
 # (lol linus) package managers alias
 alias emerge="sudo apt install"
 # winget aliases
 
-alias windate="sudo packager -Sy"
+alias windate="sudo xbps-install -Sy"
 
-alias wingrade="sudo packager -Syu"
+alias wingrade="sudo xbps-install -Syu"
 
 alias winget="sudo packager"
 
