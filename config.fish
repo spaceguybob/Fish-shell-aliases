@@ -1,10 +1,8 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-alias upd="rpm-ostree update"
+alias upd="sudo dnf update"
 
-alias rebootd="rpm-ostree update && reboot"
-
-alias neofetch=fastfetch
+alias rebootd="sudo dnf update && reboot"
 
 alias cmd=sh
 
@@ -12,9 +10,9 @@ alias neosh=fish
 
 alias bsh=bash
 
-alias notepad=gedit
+alias notepad=kwrite
 
-alias rootpad="sudo kate"
+alias rootpad="sudo kwrite"
 
 # neofetch aliases
 
@@ -29,6 +27,8 @@ alias winver="lsb_release -a"
 alias superdo=sudo
 
 ##alias sudo=doas
+
+alias superuser=su
 
 alias cl=clear
 
