@@ -44,4 +44,5 @@ alias logo="neofetch -l"
 
 end
 
-thefuck --alias | source
+#thefuck --alias | source
+fish_add_path /var/home/space/.spicetify
